@@ -143,6 +143,18 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        /* RESPONSIVE: en pantallas de 700px o menos (celulares),
+        el menú pasa de tres columnas a 1 sola, ampliadas */
+        @media (max-width: 700px) {
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
     </style>
 </head>
 <body>
